@@ -43,6 +43,10 @@ def convert():
 root = tk.Tk()
 root.title("Markdown to HTML Converter")
 
+# Set the icon for the program window
+icon_path = os.path.join(os.path.dirname(__file__), "icon.ico")
+root.iconbitmap(icon_path)
+
 # Create and place the input file widgets
 md_path_var = tk.StringVar()
 md_label = tk.Label(root, text="Markdown File:")
